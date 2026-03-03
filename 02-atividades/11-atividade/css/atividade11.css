@@ -1,0 +1,141 @@
+/* CSS RESET */
+ 
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    position: relative; /*Para ter um layout responsivo*/
+    width: 85%;
+    height: auto;
+    background-color: rgb(44, 133, 133);
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center; /*Alinha horizontalmente*/
+    align-items: center; /*alinha verticalmente*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+.menu-azul {
+    background-color: #00008B; /* Um azul escuro similar ao da imagem */
+    width: 100%;
+}
+
+.menu-azul ul {
+    display: flex;/* Coloca os itens lado a lado */
+    list-style: none;/* Remove as "bolinhas" da lista */
+    margin: 0;
+    padding: 10px 0;/* Espaçamento interno em cima e embaixo */
+    justify-content: space-around; /* Espalha os itens igualmente na barra */
+}
+
+.menu-azul li a {
+    color: white;/* Cor do texto */
+    text-decoration: none;/* Remove o sublinhado dos links */
+    font-family: Verdana, sans-serif; /* A fonte que identificamos antes */
+    font-size: 17px;
+}
+
+.menu-azul li a:hover {
+    text-decoration: underline; /* Efeito opcional ao passar o mouse */
+}
+
+/* Container que agrupa as 3 colunas */
+.corpo-site {
+    display: flex;
+    flex-wrap: wrap; /* Importante para a responsividade */
+    width: 100%;
+    background-color: white;
+}
+
+/* Barra Lateral Cinza */
+.sidebar-links {
+    background-color: #A9A9A9; /* Cor cinza da imagem */
+    min-height: 50px;
+    width: 250px;
+    list-style: none;
+}
+
+.sidebar-links li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid #bcbcbc;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar-links li a:hover {
+    background-color: #8e8e8e;
+}
+
+#branco {
+    background-color: #fff;
+    height: 10px;
+    color: black;
+}
+
+/* Área de Conteúdo */
+.conteudo-principal {
+    flex: 1; /* Ocupa o espaço que sobrar no meio */
+    padding: 20px;
+    text-align: center;
+}
+
+#titulo-conteudo {
+    position: relative;
+    bottom: 10px;
+    background-color: #fff;
+    color: black;
+    height: 30px;
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#tela {
+    height: 50%;
+    width: 100%;
+}
+
+#tela img {
+    position: relative;
+    top: 20px; /*muda a posição*/
+    height: 100%;
+    width: 100%;
+}
+
+/* Coluna do Anúncio */
+.anuncio {
+    height: auto;
+    background-color: black; /* Fundo preto do anúncio */
+    color: white;
+    align-items: center;
+}
+
+.anuncio img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Rodapé */
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}

@@ -1,0 +1,63 @@
+#azul {
+    background-color: blue;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    top: 10px;
+    left: 300px;
+    z-index: 1;
+}
+
+#vermelho {
+    background-color: red;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    width: 800px;
+    height: 100px;
+    top: 10px;
+    left: 500px;
+    z-index: 1;
+    
+}
+
+#verde {
+    background-color: rgb(0, 255, 0);
+    color: black;
+    position: absolute;
+    text-align: center;
+    width: 1000px;
+    height: 50px;
+    top: 110px;
+    left: 300px;
+    z-index: 1;
+}
+
+#amarelo {
+    box-sizing: border-box; /*borda interna*/
+    border: 10px solid red;
+    color: black;
+    background-color: yellow;
+    position: absolute;
+    text-align: center;
+    width: 1000px;
+    height: 700px;
+    top: 160px;
+    left: 300px;
+    z-index: 1;
+
+}
+
+#cinza {
+    background-color: gray;
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 1000px;
+    height: 50px;
+    top: 860px;
+    left: 300px;
+    z-index: 1;
+}

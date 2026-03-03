@@ -1,0 +1,42 @@
+#camada1 {
+
+            position: absolute; /*Componente absoluto que está sobreposto à página*/
+            width: 105px;
+            height: 150px;
+            background-color: rgb(255, 124, 124);
+            border: 5px solid #606060;
+            text-align: center;
+            top: 200px; /*Top e Left é usado em absoluto, invés do margin*/
+            left: 240px;
+            z-index: 1; /*O z-index é usado para determinar a ordem de sobreposição dos componentes, quanto maior o número, mais próximo do usuário ele fica, ou seja, mais sobreposto à página ele fica*/
+
+        }
+
+        #camada2 {
+
+            position: absolute; /*Componente absoluto que está sobreposto à página*/
+            width: 260px;
+            height: 250px;
+            background-color: rgb(124, 255, 124);
+            border: 5px solid #c80101;
+            text-align: center;
+            top: 250px; /*Top e Left é usado em absoluto, invés do margin*/
+            left: 280px;
+            z-index: 2;
+
+        }
+
+
+        #camada3 {
+
+            position: absolute;
+            top: 450px;
+            left: 360px;
+            z-index: 3;
+            
+        }
+
+        #camada3 img {
+            width: 250px;
+            height: 150px;
+        }

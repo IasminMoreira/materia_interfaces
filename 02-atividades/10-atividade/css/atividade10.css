@@ -1,0 +1,16 @@
+/* CSS RESET */
+ 
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;/*Irá ter resposividade*/
+    height: 300px;
+    width: 200px;
+    background-color: #000;
+    padding: 30px;
+}

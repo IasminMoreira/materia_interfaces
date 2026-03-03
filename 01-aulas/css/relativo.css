@@ -1,0 +1,70 @@
+/* CSS RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+/*formatamento joga na body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #8900c9;
+}
+
+#fundo{
+    position: relative;
+    width: 800px;
+    height: 1000px;
+    background-color: cadetblue;
+    margin: auto; /*Centraliza o elemento horizontalmente*/
+    margin-top: 30px;
+} /*Seria o main*/
+
+#camada1 {
+    position: relative; /*Usa apenas margin*/
+    width: 300px;
+    height: 380px;
+    background-color: #ff0;
+    border: 5px solid #f00;
+    text-align: center;
+    padding: 10px; /*Espaço para dentro da área*/
+    float: left; /*Faz o elemento flutuar para a esquerda, permitindo que os próximos elementos fiquem ao lado*/
+    
+
+}
+
+#camada2 {
+    position: relative; /*Usa apenas margin*/
+    width: 300px;
+    height: 380px;
+    background-color: #0ff;
+    border: 5px solid #00f;
+    text-align: center;
+    padding: 10px; /*Espaço para dentro da área*/
+    float: left;
+}
+
+#camada3 {
+    position: relative; /*Usa apenas margin*/
+    width: 300px;
+    height: 380px;
+    background-color: #f0f;
+    border: 5px solid #f00;
+    text-align: center;
+    padding: 10px; /*Espaço para dentro da área*/
+    clear: left; /*Quebra as sequências de float*/
+}
+
+#camada_absoluta{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(18, 0, 154);
+    top: 150px;
+    left: 200px;
+    z-index: 2;
+    
+}
