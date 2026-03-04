@@ -28,16 +28,27 @@ header {
     font-weight: normal;
 }
 
-.menu-horizontal {
+.menu-azul {
+    background-color: #00008B; /* Um azul escuro similar ao da imagem */
     width: 100%;
-    height: 25px;
-    background-color: blue;
-
 }
 
-#menu-lateral {
-    background-color: bisque;
-    
+.menu-azul {
+    display: flex;/* Coloca os itens lado a lado */
+    margin: 0;
+    padding: 10px 0;/* Espaçamento interno em cima e embaixo */
+    justify-content: space-around; /* Espalha os itens igualmente na barra */
+}
+
+.menu-azul a {
+    color: white;/* Cor do texto */
+    text-decoration: none;/* Remove o sublinhado dos links */
+    font-family: Verdana, sans-serif; /* A fonte que identificamos antes */
+    font-size: 17px;
+}
+
+.menu-azul a:hover {
+    text-decoration: underline; /* Efeito opcional ao passar o mouse */
 }
 
 /* Container que agrupa as 3 colunas */
@@ -53,10 +64,9 @@ header {
     background-color: #A9A9A9; /* Cor cinza da imagem */
     min-height: 50px;
     width: 250px;
-    list-style: none;
 }
 
-.sidebar-links li a {
+.sidebar-links a {
     display: block;
     padding: 15px;
     color: white;
@@ -65,7 +75,7 @@ header {
     font-family: Arial, sans-serif;
 }
 
-.sidebar-links li a:hover {
+.sidebar-links a:hover {
     background-color: #8e8e8e;
 }
 
