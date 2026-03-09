@@ -49,7 +49,7 @@ nav {
   transition: color 0.5s ease;
 }
 
-#about {
+#sobre {
   background-color: red;
   height: 400px;
   display: flex;
@@ -58,7 +58,7 @@ nav {
   margin-top: 10px;
 }
 
-#aboutCardText {
+#sobreCardText {
   background-color: #ab5f5f;
   width: 40%;
   height: 80%;
@@ -68,7 +68,7 @@ nav {
   border-radius: 15px;
 }
 
-#aboutCardImage {
+#sobreCardImage {
   background-image: url(/assets/loja.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,7 +76,7 @@ nav {
   height: 80%;
 }
 
-#products {
+#produtos {
   background-color: #fff;
   height: 400px;
   display: flex;
@@ -85,7 +85,7 @@ nav {
   margin-top: 10px;
 }
 
-.cardProducts {
+.cardProdutos {
   width: 20%;
   height: 90%;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
@@ -104,13 +104,13 @@ strong {
   color: red;
 }
 
-.cardProducts img {
+.cardProdutos img {
   width: 100%;
   height: 50%;
   object-fit: cover;
 }
 
-#location {
+#localizacao {
   background-color: #d74c4c;
   height: 400px;
   display: flex;
@@ -121,14 +121,14 @@ strong {
   gap: 20px;
 }
 
-.locationMap {
+.localizacaoMap {
   width: 45%;
   height: 90%;
   border-radius: 5px;
   overflow: hidden;
 }
 
-.locationInfo {
+.localInfo {
   background-color: #c89696;
   width: 45%;
   height: 90%;
@@ -139,18 +139,18 @@ strong {
   border-radius: 5px;
 }
 
-.locationInfo h2 {
+.localInfo h2 {
   font-size: 20px;
   margin-bottom: 25px;
   margin-top: 15px;
 }
 
-.locationInfo p {
+.localInfo p {
   font-size: 14px;
   line-height: 1.6;
 }
 
-#contacts {
+#contatos {
   background-color: #f0d0e0;
   height: 400px;
   display: flex;
@@ -161,12 +161,12 @@ strong {
   gap: 20px;
 }
 
-.contactForm {
+.contatosForms {
   width: 45%;
   padding: 20px;
 }
 
-.contactForm label {
+.contatosForms label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
@@ -174,8 +174,8 @@ strong {
   font-size: 14px;
 }
 
-.contactForm input,
-.contactForm textarea {
+.contatosForms input,
+.contatosForms textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -185,12 +185,12 @@ strong {
   font-size: 14px;
 }
 
-.contactForm textarea {
+.contatosForms textarea {
   resize: vertical;
   height: 100px;
 }
 
-.contactForm button {
+.contatosForms button {
   width: 100%;
   padding: 10px;
   background-color: #ddd;
@@ -201,7 +201,7 @@ strong {
   color: #333;
 }
 
-.contactForm button:hover {
+.contatosForms button:hover {
   background-color: #ccc;
 }
 
