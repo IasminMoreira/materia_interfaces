@@ -3,55 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de HTML5</title>
+    <title>Atividade 11</title>
     <link rel ="stylesheet" href="css/atividade11.css" type="text/css" />
 </head>
 <body>
     <!-- Tag container que limita o tamanho da página e a linha componentes -->
-    <main>
-        <header>
-            <h1>Curso de HTML5</h1>
+    <main id="container">
+        <header id="cabecalho_pagina">
+            <h1>HEADER</h1>
+            <p>teste de display flex</p>
         </header>
-        <nav class="menu-azul">
-                <a href="#" target="_blank">HTML</a>
-                <a href="#" target="_blank">CSS</a>
-                <a href="#" target="_blank">JavaScript 3</a>
-                <a href="#" target="_blank">Jquery 4</a>
-                <a href="#" target="_blank">Animação</a>
-                <a href="#" target="_blank">Formularios</a>
+
+        <nav id="menu_superior">
+            NAV SUPEPIOR
         </nav>
-        <div class="corpo-site">
-            <aside class="sidebar-links">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    <a href="#">Link 4</a>
-                    <a href="#">Link 5</a>
-                    <a href="#">Link 6</a>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    <a href="#">Link 4</a>
-                    <a href="#">Link 5</a>
-                    <span id="branco"></span>
-            </aside>
 
-            <section class="conteudo-principal">
-                <header id="titulo-conteudo">
-                    <h1>Título de Conteúdo</h1>
+        <div id="meio">
+            <nav id="menu_lateral">
+                Menu Lateral
+            </nav>
+
+            <section id="conteudo">
+                Section
+                <header id="cabecalho_conteudo">
+                    HEADER
                 </header>
-
-                <div id="tela">
-                    <img src="/assets/tela.jpeg">
+                <div id="imagem">
+                    DIV
                 </div>
+                <p>Parágrafo</p>
+
+                <div id="galeria">
+                    <div class="caixinha">DIV</div>
+                    <div class="caixinha">DIV</div>
+                    <div class="caixinha">DIV</div>
+                </div>
+
             </section>
 
-            <aside class="anuncio">
-                <img src="/assets/colar.jpeg">
+            <aside>
+                Publicidade
             </aside>
         </div>
 
-        <footer>Rodapé</footer>
+        <footer>
+            FOOTER
+        </footer>
+
     </main>
 </body>
 </html>

@@ -1,16 +1,99 @@
-/* CSS RESET */
- 
-* {
+*{
     border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main {
-    position: relative;/*Irá ter resposividade*/
-    height: 300px;
-    width: 200px;
-    background-color: #000;
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+main{
+    position: relative;
+    top: 10px;
+    width: 90%;
+    height: auto;
+    background-color: black;
+    margin: auto;   
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    font-size: 200%;
+    font-weight: bold;
     padding: 30px;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+    background-color: #CCFF00;
+}
+#lado_esquerdo{
+    position: relative;
+    background-color: #AAFFFF;
+    width: 30%;
+    height: 490px;/*65%*/
+    float: left;
+}
+
+nav{
+    position: relative;
+    background-color: #ffffff;
+    width: 90%;
+    height: 45%;
+    margin: auto;
+}
+aside{
+    position: relative;
+    background-color: #ffffff;
+    width: 90%;
+    height: 45%;
+    margin: auto;
+    margin-top: 5%;
+}
+#lado_direito{
+    position: relative;
+    background-color: #7C44FF;
+    width: 70%;
+    height: 490px;
+    float: left;
+}
+article{
+    position: relative;
+    background-color: #FCF1F1;
+    width: 95%;
+    height: 92.5%;
+    margin: auto;
+    margin-top: 2%;
+}
+h1{
+    position: relative;
+    background-color: #CCFFFF;
+    font-size: 110%;
+    text-align: center;
+}
+p{
+    position: relative;
+    background-color: #CC6666;
+    color: #fff;
+    width: 100%;
+    height: 30%;
+    margin-top: 1%;
+}
+div{
+    position: relative;
+    background-color: #CCCCFF;
+    color: #000;
+    width: 100%;
+    height: 54%;
+    margin-top: 1%;
+}
+footer{
+    position: relative;
+    background-color: #330000;
+    color: #fff;
+    width: 100%;
+    height: 100px;
+    float: left;
 }
