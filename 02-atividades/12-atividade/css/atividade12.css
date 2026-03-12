@@ -26,18 +26,32 @@ main{
 #nav_superior{
     position: relative;
     width: 100%;
-    height: 30px;
+    height: 40px;
     background-color: #000099;
     display: flex;
+    text-align: center;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
-
-    & a{
-        color: white;
-        text-decoration: none;
-    }
+    justify-content: space-between;
 }
+
+#nav_superior a {
+    width: 17%;
+    height: 35px;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000099;
+    padding-top: 10px;
+}
+
+#nav_superior a:hover{
+    background-color: #fff;
+    color: #000099;
+    transition: 2s all;
+}
+
 #nav_lateral{
     position: relative;
     width: 20%;
@@ -47,13 +61,16 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    & a{
-        color: white;
-        text-decoration: none;
-        margin:10px
-    }
+
 }
 
+#nav_lateral a{
+    color: white;
+    text-decoration: none;
+    margin:10px
+}
+
+/*Espaço entre os links da lateral*/
 hr{
     position: relative;
     width: 100%;
@@ -61,7 +78,7 @@ hr{
     background-color: #BBBBBB;
 }
 
-section{
+#meio{
     position: relative;
     width: 60%;
     height: 550px;
@@ -85,14 +102,15 @@ section{
     justify-content: space-around;
 }
 
-#div1{
+#tela{
     position: relative;
     width: 95%;
     height: 200px;
-    & img{
-        width: 100%;
-        height: 100%
-    };
+}
+
+#tela img{
+    width: 100%;
+    height: 100%;
 }
 
 p{
@@ -104,7 +122,7 @@ p{
     padding: 1%;
     
 }
-#div_main{
+#galeria{
     position: relative;
     width: 95%;
     height: 120px;
@@ -112,48 +130,32 @@ p{
     flex-direction: row;
     justify-content: space-between;
 }
-#div2{
+
+.caixinha{
     position: relative;
     width: 30%;
     height: 120px;
     float: left;
-    & img{
-        width: 100%;
-        height: 100%
-    };
 }
-#div3{
-    position: relative;
-    width: 30%;
-    height: 120px;
-    float: left;
-    & img{
-        width: 100%;
-        height: 100%
-    };
-}#div4{
-    position: relative;
-    width: 30%;
-    height: 120px;
-    float: left;
-    background-color: #666666;
-    & img{
-        width: 100%;
-        height: 100%
-    };
+
+.caixinha img {
+    width: 100%;
+    height: 100%;
 }
 
 
-aside{
+#anuncio{
     position: relative;
     width: 20%;
     height: 550px;
     float: left;
-    & img{
-        width: 100%;
-        height: 100%
-    };
 }
+
+#anuncio img{
+    width: 100%;
+    height: 100%;
+}
+
 footer{
     position: relative;
     width: 100%;
@@ -165,4 +167,69 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+/*------------------- Visualização mobile -------------------*/
+@media only screen and (max-width: 480px){
+    #main {
+        width: 98%;
+
+    }
+
+    #nav_superior {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+    }
+
+    #nav_superior a{
+        width: 100%;
+    }
+
+    #nav_lateral, #anuncio, p, #tela{
+        display: none;
+    } 
+
+    #meio {
+        width: 100%;
+    }
+
+    #galeria {
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixinha{
+        width: 100%;
+    }
+}
+
+
+/*--------- Visualização Tablet ---------*/
+@media only screen and (min-width: 481px) {
+    @media screen and (max-width: 720px){
+        #main {
+            width: 95%;
+        }
+
+        #nav_superior {
+            height: 80%;
+            flex-wrap: wrap;
+        }
+
+        #nav_superior a{
+            width: 33.33%;
+            color: #b5bb41;
+        }
+
+        #nav_lateral, #anuncio{
+            display: none;
+            /*Retira o componente do layout*/
+        }
+
+        #meio{
+            width: 100%;
+        }
+    }
 }
