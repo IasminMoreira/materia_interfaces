@@ -28,6 +28,7 @@ header{
     width: 100%;
     height: 160px;
     background-image: url(/assets/guitarras_header.jpg);
+    background-size: cover;
 }
 
 header nav{
